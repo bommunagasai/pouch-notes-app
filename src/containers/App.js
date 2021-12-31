@@ -30,10 +30,10 @@ const App = ({}) => {
               </Suspense>
             }
           />
-          <Route path="*" element={<NotFound />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
         </Route>
         <Route path="/register" element={<Register />} />
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </Router>
   )

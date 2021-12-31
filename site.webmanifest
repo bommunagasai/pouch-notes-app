@@ -1,6 +1,8 @@
 {
-  "name": "",
-  "short_name": "",
+  "name": "Notes App",
+  "short_name": "Notes App",
+  "start_url": "/",
+  "description": "Browser database based notes app.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
