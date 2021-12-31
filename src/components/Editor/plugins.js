@@ -39,39 +39,9 @@ const resetBlockTypesCommonRule = {
   types: [ELEMENT_BLOCKQUOTE, ELEMENT_TODO_LI],
   defaultType: ELEMENT_PARAGRAPH,
 };
-export const plugins = [
-  createLinkPlugin(),
-  createParagraphPlugin(),
-  createHeadingPlugin(),
-  createCodeBlockPlugin(),
-  createIndentPlugin({
-    inject: {
-      props: {
-        validTypes: [
-          ELEMENT_PARAGRAPH,
-          ELEMENT_H1,
-          ELEMENT_H2,
-          ELEMENT_H3,
-          ELEMENT_H4,
-          ELEMENT_H5,
-          ELEMENT_H6,
-        ],
-      },
-    },
-  }),
-  createIndentListPlugin(),
-  createBoldPlugin(),
-  createItalicPlugin(),
-  createUnderlinePlugin(),
-  createStrikethroughPlugin(),
-  createCodePlugin(),
-  createBlockquotePlugin(),
-  createHighlightPlugin(),
-  createAutoformatPlugin({
-    options: {
-      rules: autoformatRules,
-    },
-  }),
+
+export const webSpecificPlugins = [
+
   createResetNodePlugin({
     options: {
       rules: [
@@ -121,6 +91,41 @@ export const plugins = [
           },
         },
       ],
+    },
+  }),
+]
+
+export const plugins = [
+  createLinkPlugin(),
+  createParagraphPlugin(),
+  createHeadingPlugin(),
+  createCodeBlockPlugin(),
+  createIndentPlugin({
+    inject: {
+      props: {
+        validTypes: [
+          ELEMENT_PARAGRAPH,
+          ELEMENT_H1,
+          ELEMENT_H2,
+          ELEMENT_H3,
+          ELEMENT_H4,
+          ELEMENT_H5,
+          ELEMENT_H6,
+        ],
+      },
+    },
+  }),
+  createIndentListPlugin(),
+  createBoldPlugin(),
+  createItalicPlugin(),
+  createUnderlinePlugin(),
+  createStrikethroughPlugin(),
+  createCodePlugin(),
+  createBlockquotePlugin(),
+  createHighlightPlugin(),
+  createAutoformatPlugin({
+    options: {
+      rules: autoformatRules,
     },
   }),
 ]

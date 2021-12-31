@@ -1,5 +1,6 @@
 import React, { useReducer, useEffect, Suspense } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import { withSizes } from 'react-sizes'
 import { v1 as uuid } from 'uuid';
 
 import StoreManager from '../services/StoreManager'
@@ -47,7 +48,9 @@ const reducer = (state, action) => {
   }
 }
 
-const Update = () => {
+const Update = ({
+  isMobile
+}) => {
   const { noteId } = useParams()
   const db = new StoreManager('NOTE_DB')
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -109,6 +112,7 @@ const Update = () => {
               <Suspense fallback={<SpinLoader/>}>
                 <PlateEditor
                   id={uuid()}
+                  isMobile={isMobile}
                   readOnly={state.readOnly}
                   value={state?.doc?.[0]?.content}
                   onUnlock={() => dispatch({ type: 'unlock_editor' })}
@@ -142,4 +146,4 @@ const Update = () => {
   )
 }
 
-export default Update
+export default withSizes(({ width }) => ({ isMobile: width <= 576 }))(Update)

@@ -4,9 +4,23 @@
     <title>Notes App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
     <link rel="manifest" href="../site.webmanifest" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -29,5 +43,36 @@
   <body>
     <div id="app"></div>
     <script type="module" src="index.js"></script>
+
+    <script>
+      const sw = 'service-worker.js' // it is needed because parcel will not recognize this as a file and not precess in its manner
+      if (navigator && navigator.serviceWorker) {
+        navigator.serviceWorker
+          .register(sw)
+          .then((registration) => {
+            registration.onupdatefound = () => {
+              const installingWorker = registration.installing
+              if (installingWorker == null) {
+                return
+              }
+              installingWorker.onstatechange = () => {
+                if (installingWorker.state === 'installed') {
+                  if (navigator.serviceWorker.controller) {
+                    console.log(
+                      'New content is available and will be used when all ' +
+                        'tabs for this page are closed. See https://bit.ly/CRA-PWA.'
+                    )
+                  } else {
+                    console.log('Content is cached for offline use.')
+                  }
+                }
+              }
+            }
+          })
+          .catch((error) => {
+            console.error('Error during service worker registration:', error)
+          })
+      }
+    </script>
   </body>
 </html>

@@ -9,7 +9,7 @@ import {
   BalloonToolbar,
 } from '@udecode/plate'
 
-import { plugins } from './plugins'
+import { plugins, webSpecificPlugins } from './plugins'
 import { components, withStyledPlaceHolders } from './components'
 
 import {
@@ -52,6 +52,10 @@ const PlateEditor = ({
     )
   }
   const { undo = () => {}, redo = () => {} } = usePlateEditorRef() || {}
+  let PLUGINS = [...plugins]
+  if (!isMobile) {
+    PLUGINS = [...PLUGINS, ...webSpecificPlugins]
+  }
   return (
     <>
       <EditorHeader
@@ -79,7 +83,7 @@ const PlateEditor = ({
       <Plate
         id={id}
         initialValue={value}
-        plugins={createPlugins(plugins, {
+        plugins={createPlugins(PLUGINS, {
           components: withStyledPlaceHolders(components),
         })}
         editableProps={{ readOnly, autoFocus: true }}

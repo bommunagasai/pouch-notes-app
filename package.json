@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev-note": "parcel src/index.html -p 3300",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "postbuild": "workbox generateSW"
   },
   "dependencies": {
     "@ds.crisp/foundation": "0.2.1",
@@ -35,7 +36,8 @@
     "@parcel/packager-raw-url": "^2.0.1",
     "@parcel/transformer-sass": "^2.0.1",
     "@parcel/transformer-webmanifest": "^2.0.1",
-    "sass": "^1.45.1"
+    "sass": "^1.45.1",
+    "workbox-cli": "^6.4.2"
   },
   "browserslist": [
     "last 3 and_chr versions",
