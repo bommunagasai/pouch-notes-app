@@ -1,0 +1,47 @@
+{
+  "name": "pouch-notes-app",
+  "version": "1.0.0",
+  "repository": "https://github.com/bommunagasai/pouch-notes-app.git",
+  "author": "bommunagasai <bommunagasai@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev-note": "parcel src/index.html -p 3300",
+    "build": "parcel build src/index.html"
+  },
+  "dependencies": {
+    "@ds.crisp/foundation": "0.2.1",
+    "@ds.crisp/react-components": "0.2.1",
+    "@ds.crisp/scss": "0.2.1",
+    "@styled-icons/remix-editor": "^10.33.0",
+    "@udecode/plate": "^9.1.2",
+    "clsx": "^1.1.1",
+    "history": "^5.2.0",
+    "is-hotkey": "^0.2.0",
+    "parcel": "^2.0.1",
+    "pouchdb-browser": "^7.2.2",
+    "pouchdb-find": "^7.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-sizes": "^2.0.0",
+    "slate": "^0.72.3",
+    "slate-history": "^0.66.0",
+    "slate-hyperscript": "^0.67.0",
+    "slate-react": "^0.72.1",
+    "styled-components": "^5.3.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.0.1",
+    "@parcel/transformer-sass": "^2.0.1",
+    "@parcel/transformer-webmanifest": "^2.0.1",
+    "sass": "^1.45.1"
+  },
+  "browserslist": [
+    "last 3 and_chr versions",
+    "last 3 chrome versions",
+    "last 3 opera versions",
+    "last 3 ios_saf versions",
+    "last 3 safari versions"
+  ]
+}

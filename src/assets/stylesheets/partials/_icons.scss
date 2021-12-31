@@ -1,0 +1,147 @@
+/*
+* https://./fonts/remixicon.com
+* https://github.com/Remix-Design/RemixIcon
+* Copyright RemixIcon.com
+* Released under the Apache License Version 2.0
+*/
+
+@font-face {
+  font-family: "remixicon";
+  src: url('./fonts/remixicon.eot?t=1640934052631'); /* IE9*/
+  src: url('./fonts/remixicon.eot?t=1640934052631#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url("./fonts/remixicon.woff2?t=1640934052631") format("woff2"),
+  url("./fonts/remixicon.woff?t=1640934052631") format("woff"),
+  url('./fonts/remixicon.ttf?t=1640934052631') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('./fonts/remixicon.svg?t=1640934052631#remixicon') format('svg'); /* iOS 4.1- */
+  font-display: swap;
+}
+
+[class^="ri-"], [class*="ri-"] {
+  font-family: 'remixicon' !important;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ri-lg { font-size: 1.3333em; line-height: 0.75em; vertical-align: -.0667em; }
+.ri-xl { font-size: 1.5em; line-height: 0.6666em; vertical-align: -.075em; }
+.ri-xxs { font-size: .5em; }
+.ri-xs { font-size: .75em; }
+.ri-sm { font-size: .875em }
+.ri-1x { font-size: 1em; }
+.ri-2x { font-size: 2em; }
+.ri-3x { font-size: 3em; }
+.ri-4x { font-size: 4em; }
+.ri-5x { font-size: 5em; }
+.ri-6x { font-size: 6em; }
+.ri-7x { font-size: 7em; }
+.ri-8x { font-size: 8em; }
+.ri-9x { font-size: 9em; }
+.ri-10x { font-size: 10em; }
+.ri-fw { text-align: center; width: 1.25em; }
+
+.ri-bold:before { content: "\ead1"; }
+.ri-italic:before { content: "\ee6b"; }
+.ri-heading:before { content: "\ee03"; }
+.ri-text:before { content: "\f201"; }
+.ri-font-color:before { content: "\ed8b"; }
+.ri-font-size:before { content: "\ed8d"; }
+.ri-font-size-2:before { content: "\ed8c"; }
+.ri-underline:before { content: "\f244"; }
+.ri-emphasis:before { content: "\ec9a"; }
+.ri-emphasis-cn:before { content: "\ec99"; }
+.ri-strikethrough:before { content: "\f1ab"; }
+.ri-strikethrough-2:before { content: "\f1aa"; }
+.ri-format-clear:before { content: "\ed96"; }
+.ri-align-left:before { content: "\ea27"; }
+.ri-align-center:before { content: "\ea25"; }
+.ri-align-right:before { content: "\ea28"; }
+.ri-align-justify:before { content: "\ea26"; }
+.ri-align-top:before { content: "\ea29"; }
+.ri-align-vertically:before { content: "\ea2a"; }
+.ri-align-bottom:before { content: "\ea24"; }
+.ri-list-check:before { content: "\eeba"; }
+.ri-list-check-2:before { content: "\eeb9"; }
+.ri-list-ordered:before { content: "\eebb"; }
+.ri-list-unordered:before { content: "\eebe"; }
+.ri-indent-decrease:before { content: "\ee54"; }
+.ri-indent-increase:before { content: "\ee55"; }
+.ri-line-height:before { content: "\eead"; }
+.ri-text-spacing:before { content: "\f1ff"; }
+.ri-text-wrap:before { content: "\f200"; }
+.ri-attachment-2:before { content: "\ea84"; }
+.ri-link:before { content: "\eeb2"; }
+.ri-link-unlink:before { content: "\eeb1"; }
+.ri-link-m:before { content: "\eeaf"; }
+.ri-link-unlink-m:before { content: "\eeb0"; }
+.ri-separator:before { content: "\f0de"; }
+.ri-rounded-corner:before { content: "\f099"; }
+.ri-delete-column:before { content: "\ec2b"; }
+.ri-delete-row:before { content: "\ec2c"; }
+.ri-insert-row-bottom:before { content: "\ee63"; }
+.ri-organization-chart:before { content: "\efb8"; }
+.ri-node-tree:before { content: "\ef90"; }
+.ri-insert-row-top:before { content: "\ee64"; }
+.ri-insert-column-right:before { content: "\ee62"; }
+.ri-mind-map:before { content: "\ef59"; }
+.ri-flow-chart:before { content: "\ed46"; }
+.ri-insert-column-left:before { content: "\ee61"; }
+.ri-split-cells-vertical:before { content: "\f17b"; }
+.ri-h-6:before { content: "\edeb"; }
+.ri-h-5:before { content: "\edea"; }
+.ri-split-cells-horizontal:before { content: "\f17a"; }
+.ri-merge-cells-vertical:before { content: "\ef42"; }
+.ri-h-4:before { content: "\ede9"; }
+.ri-h-3:before { content: "\ede8"; }
+.ri-merge-cells-horizontal:before { content: "\ef41"; }
+.ri-number-9:before { content: "\efa8"; }
+.ri-number-0:before { content: "\ef9f"; }
+.ri-sort-asc:before { content: "\f15f"; }
+.ri-sort-desc:before { content: "\f160"; }
+.ri-bring-forward:before { content: "\eaf6"; }
+.ri-send-backward:before { content: "\f0d6"; }
+.ri-bring-to-front:before { content: "\eaf7"; }
+.ri-send-to-back:before { content: "\f0db"; }
+.ri-h-1:before { content: "\ede6"; }
+.ri-h-2:before { content: "\ede7"; }
+.ri-space:before { content: "\f167"; }
+.ri-superscript:before { content: "\f1c1"; }
+.ri-translate:before { content: "\f227"; }
+.ri-number-4:before { content: "\efa3"; }
+.ri-number-3:before { content: "\efa2"; }
+.ri-question-mark:before { content: "\f046"; }
+.ri-subscript-2:before { content: "\f1ac"; }
+.ri-subscript:before { content: "\f1ad"; }
+.ri-asterisk:before { content: "\ea81"; }
+.ri-number-2:before { content: "\efa1"; }
+.ri-hashtag:before { content: "\edfc"; }
+.ri-table-2:before { content: "\f1da"; }
+.ri-single-quotes-r:before { content: "\f13c"; }
+.ri-single-quotes-l:before { content: "\f13b"; }
+.ri-functions:before { content: "\ed9f"; }
+.ri-omega:before { content: "\efaf"; }
+.ri-wubi-input:before { content: "\f2cf"; }
+.ri-input-cursor-move:before { content: "\ee5e"; }
+.ri-translate-2:before { content: "\f226"; }
+.ri-number-5:before { content: "\efa4"; }
+.ri-number-6:before { content: "\efa5"; }
+.ri-number-7:before { content: "\efa6"; }
+.ri-number-8:before { content: "\efa7"; }
+.ri-a-b:before { content: "\ea05"; }
+.ri-english-input:before { content: "\ec9b"; }
+.ri-pinyin-input:before { content: "\f001"; }
+.ri-page-separator:before { content: "\efbd"; }
+.ri-superscript-2:before { content: "\f1c0"; }
+.ri-code-view:before { content: "\ebae"; }
+.ri-paragraph:before { content: "\efc8"; }
+.ri-double-quotes-l:before { content: "\ec51"; }
+.ri-text-direction-l:before { content: "\f1fd"; }
+.ri-double-quotes-r:before { content: "\ec52"; }
+.ri-text-direction-r:before { content: "\f1fe"; }
+.ri-arrow-go-forward-line:before { content: "\ea5a"; }
+.ri-arrow-go-back-line:before { content: "\ea58"; }
+.ri-arrow-left-s-line:before { content: "\ea64"; }
+.ri-lock-2-line:before { content: "\eecc"; }
+.ri-lock-unlock-line:before { content: "\eed2"; }
+.ri-save-line:before { content: "\f0b3"; }
+.ri-edit-fill:before { content: "\ec85"; }

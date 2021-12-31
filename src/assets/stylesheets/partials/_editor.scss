@@ -1,0 +1,89 @@
+.pna-editor-toolbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #88929f;
+  padding-bottom: 8px;
+}
+
+.pna-cursor-pointer {
+  cursor: pointer;
+}
+
+.pna-create-submit-btn {
+  position: relative;
+  font-family: 'Poppins';
+  letter-spacing: 1px;
+}
+
+.pna-create-note-form-container {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.pna-sheet-header-border {
+  border-bottom: 1px solid #ced3d6;
+}
+
+.pna-sheet-footer-border {
+  border-top: 1px solid #ced3d6;
+}
+
+.slate-ToolbarButton {
+  margin: 4px;
+  cursor: pointer;
+  i {
+    padding: 8px;
+    border-radius: 4px;
+    &:before {
+      color: #1f2456;
+    }
+    &:hover {
+      background: #eef8ff;
+      &:before {
+        color: #475ddb;
+      }
+    }
+  }
+  &.slate-ToolbarButton-active {
+    i {
+      background: #eef8ff;
+      &:before {
+        color: #475ddb;
+      }
+    }
+  }
+}
+
+.slate-BalloonToolbar {
+  border: none !important;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
+  min-height: unset !important;
+  padding: 4px !important;
+}
+
+.slate-HeaderButton {
+  margin: 4px;
+  cursor: pointer;
+  i {
+    padding: 8px;
+    border-radius: 4px;
+    &:before {
+      color: #475ddb;
+    }
+    &:hover {
+      background: #eef8ff;
+    }
+  }
+  &.active {
+    i {
+      padding: 8px;
+      border-radius: 4px;
+      background: #eef8ff;
+      &:before {
+        color: #475ddb;
+      }
+    }
+  }
+}

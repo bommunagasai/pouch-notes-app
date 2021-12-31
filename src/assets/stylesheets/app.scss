@@ -1,0 +1,13 @@
+@import './partials/header';
+@import './partials/ftu';
+@import './partials/settings';
+@import './partials/list';
+@import './partials/icons';
+@import './partials/editor';
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}

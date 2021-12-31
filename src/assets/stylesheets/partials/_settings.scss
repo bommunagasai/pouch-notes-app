@@ -1,0 +1,28 @@
+.pna-input-field {
+  // background: transparent;
+  padding: 12px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a1acb3;
+  border-radius: 4px;
+  display: block;
+  margin-bottom: 4px;
+  width: 100%;
+  &:focus {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #1f2456;
+    outline: none;
+  }
+}
+
+.pna-font-size-zero {
+  font-size: 0;
+}
+
+.pna-settings-submit-btn {
+  position: relative;
+  font-family: 'Poppins';
+  letter-spacing: 1px;
+  min-width: 150px;
+}

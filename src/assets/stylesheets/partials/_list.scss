@@ -1,0 +1,41 @@
+.pna-text-center {
+  text-align: center;
+}
+
+.pna-text-end {
+  text-align: end;
+}
+
+.pna-position-relative {
+  position: relative;
+}
+
+.pna-new-create-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 15px;
+  z-index: 100;
+  border: 1px solid #ced3d6;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.pna-icon-class {
+  height: fit-content;
+}
+
+.pna-delete-notes-popup {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  text-align: left;
+  box-shadow: 0 4px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.pna-empty-state-container {
+  margin: auto;
+  padding-top: 42px;
+}
+
+.pna-line-break-anywhere {
+  line-break: anywhere;
+}
