@@ -10,7 +10,7 @@ const Update = React.lazy(() => import('./Update'))
 
 const App = ({}) => {
   return (
-    <Router>
+    <Router basename='/pouch-notes-app'>
       <Routes>
         <Route path="/" element={<PrivateOutlet redirectTo="/register" />}>
           <Route path="/" element={<List />} />
@@ -30,10 +30,9 @@ const App = ({}) => {
               </Suspense>
             }
           />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Route>
         <Route path="/register" element={<Register />} />
-        {/* <Route path="*" element={<NotFound />} /> */}
       </Routes>
     </Router>
   )
