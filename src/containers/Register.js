@@ -139,7 +139,7 @@ const Register = () => {
       <Header />
       <Row>
         <Col md={6} className={getClassName({ padding: Spacing.md })}>
-          <Image src={FTU_SVG} width="100%" height="inherit" alt="Onboarding" />
+          <Image src={FTU_SVG} width="100%" height="320px" alt="Explore" />
         </Col>
         <Col md={4} className={getClassName({ paddingT: Spacing.md })}>
           <Card

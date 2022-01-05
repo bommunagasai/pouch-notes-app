@@ -34,7 +34,7 @@ const NotFound = () => {
             src={NOT_FOUND}
             width="100%"
             height="inherit"
-            alt="Onboarding"
+            alt="Notfound page"
           />
         </Col>
         <Col md={5} className="align-self-center">

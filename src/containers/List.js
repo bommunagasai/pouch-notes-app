@@ -176,7 +176,7 @@ const List = ({ isMobile, isTab, className }) => {
                 md={6}
                 className={`pna-empty-state-container pna-text-center`}
               >
-                <Image src={EMPTY_STREET} width="100%" height="inherit" />
+                <Image src={EMPTY_STREET} width="100%" height="inherit" alt='Notes list FTU'/>
                 <Text
                   fontSize={FontSize.xl}
                   fontWeight={FontWeight.bold}

@@ -9,7 +9,7 @@ const Splash = () => {
     <Container>
       <Row className={getClassName({ marginT: Spacing.xl })}>
         <Col md={6} className='pna-empty-state-container pna-text-center'>
-          <Image src={SPLASH_SVG}  height={250} width='inherit'/>
+          <Image src={SPLASH_SVG}  height={250} width='inherit' alt='Splash image'/>
         </Col>
       </Row>
     </Container>

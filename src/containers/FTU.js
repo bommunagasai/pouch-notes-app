@@ -25,13 +25,13 @@ const FTU = ({
 }) => {
   return (
     <Container>
-      <Row className={getClassName({ marginT: Spacing.xxl })}>
-        <Col md={6} className={`pna-text-center ${getClassName({ padding: Spacing.xl })}`}>
+      <Row className={getClassName({ marginT: Spacing.xl })}>
+        <Col md={6} className={`pna-text-center ${getClassName({ padding: Spacing.xs })}`}>
           <Image
             src={FTU_SVG}
             width="100%"
-            height="inherit"
-            alt="Onboarding"
+            height="320px"
+            alt="Notes App FTU"
           />
         </Col>
         <Col md={5} className="align-self-center">
