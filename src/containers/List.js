@@ -57,7 +57,7 @@ const AddNotesBtn = ({ onClick, className = '', isMobile }) => {
       <Card
         className={`pna-cursor-pointer pna-font-size-zero d-flex ${className}`}
         backgroundColor={Color['dark']}
-        borderRadius={Spacing.sm}
+        borderRadius={Spacing.xs}
         padding={Spacing.xs}
         onClick={onClick}
       >

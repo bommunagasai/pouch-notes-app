@@ -13,7 +13,6 @@ import { v1 as uuid } from 'uuid'
 import { Color as ColorMap, getClassName } from '@ds.crisp/foundation'
 import StoreManager from '../services/StoreManager'
 
-import '@ds.crisp/scss/lib/Sheet.css'
 import CreateNoteForm from '../components/CreateNoteForm'
 
 import PlateEditor from '../components/Editor'

@@ -15,12 +15,6 @@ import {
   Spacing,
 } from '@ds.crisp/foundation'
 
-import '@ds.crisp/scss/lib/SearchBar.css'
-import '@ds.crisp/scss/lib/Grid.css'
-import '@ds.crisp/scss/lib/Tag.css'
-import '@ds.crisp/scss/lib/Utilities.css'
-import '@ds.crisp/scss/lib/Color.css'
-import '@ds.crisp/scss/lib/Icons.css'
 
 const Header = ({ appName = 'Notes App', navNode }) => {
   const headerClassName = clsx(

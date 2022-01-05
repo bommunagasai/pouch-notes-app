@@ -9,14 +9,12 @@ import {
   BalloonToolbar,
 } from '@udecode/plate'
 
-import { plugins, webSpecificPlugins } from './plugins'
+import { plugins } from './plugins'
 import { components, withStyledPlaceHolders } from './components'
 
 import {
   MarksToolbar,
-  HeadingsToolbar,
   IndentToolbar,
-  ListToolbar,
 } from './toolbars'
 import { Card } from '@ds.crisp/react-components'
 import { Spacing } from '@ds.crisp/foundation'
@@ -27,12 +25,10 @@ const PlateEditor = ({
   readOnly = false,
   goBack = () => {},
   onSave = () => {},
-  isMobile = false,
   onUnlock = () => {},
   id,
 }) => {
   const [content, setContent] = useState(value)
-
   const StaticToolbar = () => {
     const editor = usePlateEditorRef()
     return (
@@ -41,21 +37,16 @@ const PlateEditor = ({
         className="d-flex flex-wrap pna-editor-toolbar"
       >
         <MarksToolbar />
-        <HeadingsToolbar />
         <BlockToolbarButton
           type={getPluginType(editor, ELEMENT_BLOCKQUOTE)}
           icon={<i className="ri-double-quotes-l" />}
         />
-        <ListToolbar />
         <IndentToolbar />
       </Card>
     )
   }
   const { undo = () => {}, redo = () => {} } = usePlateEditorRef() || {}
-  let PLUGINS = [...plugins]
-  if (!isMobile) {
-    PLUGINS = [...PLUGINS, ...webSpecificPlugins]
-  }
+
   return (
     <>
       <EditorHeader
@@ -68,7 +59,7 @@ const PlateEditor = ({
       />
       {!readOnly && (
         <>
-          <BalloonToolbar
+          {/* <BalloonToolbar
             popperOptions={{
               placement: 'top',
             }}
@@ -76,14 +67,14 @@ const PlateEditor = ({
             arrow={false}
           >
             <MarksToolbar />
-          </BalloonToolbar>
+          </BalloonToolbar> */}
           <StaticToolbar />
         </>
       )}
       <Plate
         id={id}
         initialValue={value}
-        plugins={createPlugins(PLUGINS, {
+        plugins={createPlugins(plugins, {
           components: withStyledPlaceHolders(components),
         })}
         editableProps={{ readOnly, autoFocus: true }}
@@ -92,6 +83,11 @@ const PlateEditor = ({
           onChange(c)
         }}
       />
+      <pre>
+        <code>
+          {JSON.stringify(content, null, 4)}
+        </code>
+      </pre>
     </>
   )
 }

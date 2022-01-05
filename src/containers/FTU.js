@@ -10,11 +10,6 @@ import {
   Button,
 } from '@ds.crisp/react-components'
 
-import '@ds.crisp/scss/lib/Grid.css'
-import '@ds.crisp/scss/lib/Utilities.css'
-import '@ds.crisp/scss/lib/Loader.css'
-import '@ds.crisp/scss/lib/Button.css'
-
 import FTU_SVG from '../assets/images/ftu-main.svg'
 import {
   Color,

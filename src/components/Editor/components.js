@@ -28,8 +28,8 @@ export const withStyledPlaceHolders = (components) =>
   withPlaceholders(components, [
     {
       key: ELEMENT_PARAGRAPH,
-      placeholder: 'Type a paragraph',
-      hideOnBlur: true,
+      placeholder: 'Untitled',
+      hideOnBlur: false,
     },
     {
       key: ELEMENT_H1,
@@ -144,7 +144,6 @@ export const components = {
       ],
     },
   }),
-
   [MARK_HIGHLIGHT]: withProps(StyledLeaf, {
     as: 'mark',
     styles: {
@@ -155,8 +154,6 @@ export const components = {
     },
   }),
   [MARK_ITALIC]: withProps(StyledLeaf, { as: 'em' }),
-
   [MARK_STRIKETHROUGH]: withProps(StyledLeaf, { as: 's' }),
-
   [MARK_UNDERLINE]: withProps(StyledLeaf, { as: 'u' }),
 }

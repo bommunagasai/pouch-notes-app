@@ -58,20 +58,6 @@ export const webSpecificPlugins = [
       ],
     },
   },),
-  createSoftBreakPlugin({
-    options: {
-      rules: [
-        { hotkey: 'shift+enter' },
-        {
-          hotkey: 'enter',
-          query: {
-            allow: [ELEMENT_CODE_BLOCK, ELEMENT_BLOCKQUOTE, ELEMENT_TD],
-          },
-        },
-      ],
-    }
-  }),
-  createTrailingBlockPlugin({ type: ELEMENT_PARAGRAPH }),
   createExitBreakPlugin({
     options: {
       rules: [
@@ -93,13 +79,27 @@ export const webSpecificPlugins = [
       ],
     },
   }),
+  createTrailingBlockPlugin({ type: ELEMENT_PARAGRAPH }),
+  createSoftBreakPlugin({
+    options: {
+      rules: [
+        { hotkey: 'shift+enter' },
+        {
+          hotkey: 'enter',
+          query: {
+            allow: [ELEMENT_CODE_BLOCK, ELEMENT_BLOCKQUOTE, ELEMENT_TD],
+          },
+        },
+      ],
+    }
+  }),
 ]
 
 export const plugins = [
   createLinkPlugin(),
   createParagraphPlugin(),
-  createHeadingPlugin(),
-  createCodeBlockPlugin(),
+  // createHeadingPlugin(),
+  // createCodeBlockPlugin(),
   createIndentPlugin({
     inject: {
       props: {
@@ -123,9 +123,9 @@ export const plugins = [
   createCodePlugin(),
   createBlockquotePlugin(),
   createHighlightPlugin(),
-  createAutoformatPlugin({
-    options: {
-      rules: autoformatRules,
-    },
-  }),
+  // createAutoformatPlugin({
+  //   options: {
+  //     rules: autoformatRules,
+  //   },
+  // }),
 ]
