@@ -8,7 +8,7 @@ import { SpinLoader } from '@ds.crisp/react-components'
 const Create = React.lazy(() => import('./Create'))
 const Update = React.lazy(() => import('./Update'))
 
-import '@ds.crisp/scss/lib/SearchBar.css'
+// import '@ds.crisp/scss/lib/SearchBar.css'
 import '@ds.crisp/scss/lib/Grid.css'
 import '@ds.crisp/scss/lib/Tag.css'
 import '@ds.crisp/scss/lib/Utilities.css'
@@ -17,6 +17,7 @@ import '@ds.crisp/scss/lib/Icons.css'
 import '@ds.crisp/scss/lib/Loader.css'
 import '@ds.crisp/scss/lib/Button.css'
 import '@ds.crisp/scss/lib/Sheet.css'
+import '@ds.crisp/scss/lib/Image.css'
 
 const App = ({}) => {
   return (

@@ -29,7 +29,7 @@ const FTU = ({
         <Col md={6} className={`pna-text-center ${getClassName({ padding: Spacing.xs })}`}>
           <Image
             src={FTU_SVG}
-            width="100%"
+            width="inherit"
             height="320px"
             alt="Notes App FTU"
           />
