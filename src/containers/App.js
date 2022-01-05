@@ -20,7 +20,7 @@ import '@ds.crisp/scss/lib/Sheet.css'
 
 const App = ({}) => {
   return (
-    <Router>
+    <Router basename='/pouch-notes-app'>
       <Routes>
         <Route path="/" element={<PrivateOutlet redirectTo="/register" />}>
           <Route path="/" element={<List />} />

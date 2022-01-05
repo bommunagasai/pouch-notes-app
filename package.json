@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev-note": "parcel src/index.html -p 3300",
-    "build": "parcel build src/index.html",
+    "build": "parcel build src/index.html --public-url ./ --dist-dir ./docs",
     "postbuild": "workbox generateSW"
   },
   "dependencies": {
@@ -45,5 +45,11 @@
     "last 3 opera versions",
     "last 3 ios_saf versions",
     "last 3 safari versions"
+  ],
+  "keywords": [
+    "notes app",
+    "pouchdb",
+    "@ds.crisp",
+    "PWA"
   ]
 }
