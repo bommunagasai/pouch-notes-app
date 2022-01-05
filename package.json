@@ -7,7 +7,7 @@
   "scripts": {
     "dev-note": "parcel src/index.html -p 3300",
     "build": "parcel build src/index.html --public-url ./ --dist-dir ./docs",
-    "postbuild": "workbox generateSW"
+    "post-build": "workbox generateSW"
   },
   "dependencies": {
     "@ds.crisp/foundation": "0.2.1",
